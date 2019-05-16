@@ -35,7 +35,7 @@
 		box-sizing: border-box;
 		height: 240upx;
 		padding: 10upx 0upx 10upx 30upx;
-		margin-top: 10upx;
+		margin-top: 30upx;
 		background: cadetblue;
 		border-radius: 10upx;
 		.text {

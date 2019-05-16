@@ -22,6 +22,10 @@
 		<!--  -->
 		<bigWrap firstTitle='车好价优' secondTitle="低价格 高品质 居家出行首选"></bigWrap>
 		<carList></carList>
+		<bigWrap firstTitle='车好价优' secondTitle="低价格 高品质 居家出行首选"></bigWrap>
+		<carList></carList>
+		<bigWrap firstTitle='车好价优' secondTitle="低价格 高品质 居家出行首选"></bigWrap>
+		<carList></carList>
 	</view>
 </template>
 

@@ -1,24 +1,12 @@
 <template>
-	<!-- <scroll-view class="floor-list" scroll-x>
-		<view class="scoll-wrapper">
-			<view 
-				v-for="(item, index) in goodsList" :key="index"
-				class="floor-item"
-				@click="navToDetailPage(item)"
-			>
-				<image :src="item.image" mode="aspectFill"></image>
-				<text class="title clamp">{{item.title}}</text>
-				<text class="price">￥{{item.price}}</text>
-			</view>
-		</view>
-	</scroll-view> -->
-	
 	<scroll-view scroll-x class="carList">
 		<view class="scroll-wrapper">
-			<view class="" v-for='car in carlist' :key="car.carId">
-				<text>{{car.name}}</text>
-				<image :src="car.logo" mode=""></image>
-				
+			<view class="car-item" v-for='car in carlist' :key="car.carId">
+				<div class='car-img-wrap'>
+					<image class='car-img' :src="car.logo" mode="widthFix"></image>
+				</div>
+				<p class='car-name'>{{car.name}}</p>
+				<p class='car-firstPay'>首付: {{car.firstPay}}万</p>
 			</view>
 		</view>
 	</scroll-view>
@@ -61,9 +49,37 @@
 
 <style lang="less">
 	.carList {
+		margin-top: 30upx;
 		.scroll-wrapper {
 			display:flex;
 			align-items: flex-start;
+			padding: 0 30upx;
+			.car-item {
+				border: 1px solid #fff;
+				margin-right: 20upx;
+				.car-img-wrap {
+					width: 180px;
+					text-align: center;
+					background: #eee;
+					border-radius: 14upx; 
+					.car-img {
+						width: 300upx;
+					}
+				}
+				
+				.car-name {
+					color: #333;
+					font-size: 26upx;
+					line-height: 40upx;
+				}
+				.car-firstPay {
+					color: #E83817;
+					font-weight: 500;
+					font-size: 26upx;
+					line-height: 40upx;
+				}
+			}
+			
 		}
 		
 	}
